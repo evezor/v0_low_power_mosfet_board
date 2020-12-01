@@ -16,6 +16,8 @@ can.setfilter(0, CAN.LIST16, 0, (123, 124, 125, 126))
 HBT_LED = Pin("D5", Pin.OUT)
 FUNC_BUTTON = Pin("E7", Pin.IN, Pin.PULL_UP) 
 NEO_STATUS = Pin("E6", Pin.OUT)
+can_wakeup = Pin("D6", Pin.OUT)
+can_wakeup.value(0)
 
 BUTTON_1 = Pin("E12", Pin.IN, Pin.PULL_UP) 
 BUTTON_2 = Pin("E11", Pin.IN, Pin.PULL_UP) 
@@ -64,7 +66,7 @@ def chk_hbt():
       
 
 def send():
-    can.send('EVZRTEST', 123)   # send a message with id 123
+    can.send('lowPrFET', 123)   # send a message with id 123
     
 def get():
     mess = can.recv(0)
@@ -100,6 +102,7 @@ while True:
     if not (FUNC_BUTTON.value()):
         print("function button")
         send()
+        simple_test()
         utime.sleep_ms(200)
     
     if(can.any(0)):
