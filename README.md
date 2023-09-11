@@ -3,17 +3,15 @@
 
 An edge board containing 3 low power mosfets capable of powering small loads like relays, small fans and LEDs. Also 3 buttons.  Each output may be pulse width modulated.  Power can come from the bus or external sources, selectable by jumper.
 
-![sm]()
+![sm](https://github.com/evezor/v0_low_power_mosfet_board/blob/master/pics/sm.PNG)
 
-![sm2]()
+![front](https://github.com/evezor/v0_low_power_mosfet_board/blob/master/pics/front.PNG)
 
-![front]()
+![back](https://github.com/evezor/v0_low_power_mosfet_board/blob/master/pics/back.PNG)
 
-![back]()
+![copper](https://github.com/evezor/v0_low_power_mosfet_board/blob/master/pics/copper.PNG)
 
-![copper]()
-
-![sch]()
+![sch](https://github.com/evezor/v0_low_power_mosfet_board/blob/master/cad_files/LOW_POWER_MOSFET_N.svg)
 
 
 source files can be found here: https://github.com/evezor/v0_low_power_mosfet_board
